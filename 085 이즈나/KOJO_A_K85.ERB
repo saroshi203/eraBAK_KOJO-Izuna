@@ -37,14 +37,14 @@ IF CFLAG:200 == 0
 	IF !CFLAG:17
 		PRINTFORMW 한가롭게 백귀야행을 거니던 중 한 학생이 눈에 띄었다
 		SETCOLOR 칼라_핑크
-		PRINTFORML 「이즈나에게 뭔가 용무가 있습니까?」
+		PRINTFORMW 「이즈나에게 뭔가 용무가 있습니까?」
 		RESETCOLOR
-		PRINTFORML 당신을 소개했다
+		PRINTFORMW 당신을 소개했다
 		SETCOLOR 칼라_핑크
 		PRINTFORMW 「오오 과연! 샬레의 선생님이셨습니까!」
 		PRINTFORMW 「저는 쿠다 이즈나라고 합니다! 키보토스 최강의 닌자를 꿈꾸고 있어요!」
 		PRINTFORMW 「그런데 이즈나는 어엿한 닌자가 되기 위해선 섬기는 주군이 필요하다 느끼던 찰나였습니다만...」
-		PRINTFORML 「혹시 선생님께서 이즈나의 주군이 되어 주시겠습니까?」
+		PRINTFORMW 「혹시 선생님께서 이즈나의 주군이 되어 주시겠습니까?」
 		RESETCOLOR
 		PRINTFORMW
 		PRINTFORMW [0]- 학생의 부탁이라면
@@ -52,18 +52,18 @@ IF CFLAG:200 == 0
 		INPUT
 		SELECTCASE RESULT
 			CASE 0
-				PRINTFORML 학생의 부탁이라면
+				PRINTFORMW 학생의 부탁이라면
 				SETCOLOR 칼라_핑크
 				PRINTFORMW 「이즈나의 주군이 되어 주시겠단건가요?」
 				PRINTFORMW 「에헤헤... 감사합니다 주군!」
-				PRINTFORML 「이즈나는 꼭! 주군의 기대에 부응하는 닌자가 되어 보이겠습니다! 닌닌!」
+				PRINTFORMW 「이즈나는 꼭! 주군의 기대에 부응하는 닌자가 되어 보이겠습니다! 닌닌!」
 				RESETCOLOR
 			CASE 1
-				PRINTFORML 긍정의 의미로 이즈나의 머리를 쓰다듬었다
+				PRINTFORMW 긍정의 의미로 이즈나의 머리를 쓰다듬었다
 				SETCOLOR 칼라_핑크
 				PRINTFORMW 「읏... 이건 긍정의 의미 인가요...?」
 				PRINTFORMW 「이즈나의 주군이 되어 주시겠단건가요?」
-				PRINTFORML 「에헤헤... 이즈나는 지금 행복합니다!」
+				PRINTFORMW 「에헤헤... 이즈나는 지금 행복합니다!」
 				RESETCOLOR
 				CFLAG:호감도 += 100
 		ENDSELECT
@@ -75,33 +75,33 @@ IF CFLAG:200 == 0
 	ELSE
 		PRINTFORMW 한가롭게 백귀야행을 거니던 중 어디서 본 적 있는것 같은 학생이 눈에 띄었다
 		SETCOLOR 칼라_핑크
-		PRINTFORML 「이즈나에게 뭔가 용무가 있습니까?」
+		PRINTFORMW 「이즈나에게 뭔가 용무가 있습니까?」
 		RESETCOLOR
-		PRINTFORML 당신을 소개했다
+		PRINTFORMW 당신을 소개했다
 		SETCOLOR 칼라_핑크
 		PRINTFORMW 「어디서 본듯한... 분인데... 아! 샬레의 선생님이셨습니까!」
 		PRINTFORMW 「다시한번, 저는 쿠다 이즈나라고 합니다! 키보토스 최강의 닌자를 꿈꾸고 있어요!」
 		PRINTFORMW 「그런데 이즈나는 어엿한 닌자가 되기 위해선 섬기는 주군이 필요하다 느끼던 찰나였습니다만...」
-		PRINTFORML 「혹시 선생님께서 이즈나의 주군이 되어 주시겠습니까?」
+		PRINTFORMW 「혹시 선생님께서 이즈나의 주군이 되어 주시겠습니까?」
 		RESETCOLOR
 		PRINTFORMW
-		PRINTFORML [0]- 학생의 부탁이라면
-		PRINTFORML [1]- 머리를 쓰다듬는다
+		PRINTFORMW [0]- 학생의 부탁이라면
+		PRINTFORMW [1]- 머리를 쓰다듬는다
 		INPUT
 		SELECTCASE RESULT
 			CASE 0
-				PRINTFORML 학생의 부탁이라면
+				PRINTFORMW 학생의 부탁이라면
 				SETCOLOR 칼라_핑크
 				PRINTFORMW 「이즈나의 주군이 되어 주시겠단건가요?」
 				PRINTFORMW 「에헤헤... 감사합니다 주군!」
-				PRINTFORML 「이즈나는 꼭! 주군의 기대에 부응하는 닌자가 되어 보이겠습니다! 닌닌!」
+				PRINTFORMW 「이즈나는 꼭! 주군의 기대에 부응하는 닌자가 되어 보이겠습니다! 닌닌!」
 				RESETCOLOR
 			CASE 1
-				PRINTFORML 긍정의 의미로 이즈나의 머리를 쓰다듬었다
+				PRINTFORMW 긍정의 의미로 이즈나의 머리를 쓰다듬었다
 				SETCOLOR 칼라_핑크
 				PRINTFORMW 「읏... 이건 긍정의 의미 인가요...?」
 				PRINTFORMW 「이즈나의 주군이 되어 주시겠단건가요?」
-				PRINTFORML 「에헤헤... 이즈나는 지금 행복합니다!」
+				PRINTFORMW 「에헤헤... 이즈나는 지금 행복합니다!」
 				RESETCOLOR
 				CFLAG:호감도 += 100
 		ENDSELECT
@@ -116,7 +116,7 @@ IF CFLAG:200 == 0
 ELSEIF CFLAG:200 < 5 && TALENT:합의 && TALENT:연모
 	CFLAG:200 = 5
 	SETCOLOR 칼라_핑크
-	PRINTFORML 「주...주군 좋은 아침 이에요...」
+	PRINTFORMW 「주...주군 좋은 아침 이에요...」
 	RESETCOLOR
 	PRINTFORMW 이즈나는 눈에띄게 부끄러워하고있다
 ;연모+연인이 된 다음
@@ -5738,7 +5738,7 @@ IF SELECTCOM == 300
 	;처음(주도권을 고려하지 않는다)
 	IF IS_COM_FIRST()
 		SETCOLOR 칼라_핑크
-		PRINTFORML 「음... 이렇게 있는것도 좋지만 뭔가 이야기라도 하지 않겠습니까? 주군?」
+		PRINTFORMW 「음... 이렇게 있는것도 좋지만 뭔가 이야기라도 하지 않겠습니까? 주군?」
 		RESETCOLOR
 	;2회째 이후
 	ELSE
@@ -5748,35 +5748,35 @@ IF SELECTCOM == 300
 				CASE 0
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「이즈나가 좋아하는것 말인가요?」
-					PRINTFORML 「음... 주군말곤 생각나지않네요♥」
+					PRINTFORMW 「음... 주군말곤 생각나지않네요♥」
 					RESETCOLOR
 				CASE 1
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「이즈나가 좋으시다고요...?」
-					PRINTFORML 「에헤헤... 이즈나도 주군이 좋아요♥」
+					PRINTFORMW 「에헤헤... 이즈나도 주군이 좋아요♥」
 					RESETCOLOR
 				CASE 2
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「주~군~! 이즈나랑 놀아주세요!」
+					PRINTFORMW 「주~군~! 이즈나랑 놀아주세요!」
 					RESETCOLOR
-					PRINTFORML 이즈나는 %AMANE(MASTER)%의 품에 달려와 안겼다
+					PRINTFORMW 이즈나는 %AMANE(MASTER)%의 품에 달려와 안겼다
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「에헤헤 주군 좋아해요♥」
+					PRINTFORMW 「에헤헤 주군 좋아해요♥」
 					RESETCOLOR
 				CASE 3
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「주군♥ 사랑하고있어요♥」
+					PRINTFORMW 「주군♥ 사랑하고있어요♥」
 					RESETCOLOR
-					PRINTFORML 이즈나의 갑작스런 고백의 %조사처리(ANAME(MASTER),"은")% 무심코 얼굴을 붉혔다 
+					PRINTFORMW 이즈나의 갑작스런 고백의 %조사처리(ANAME(MASTER),"은")% 무심코 얼굴을 붉혔다 
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「주군도 어서 이즈나에게 사랑한다 해주세요~」
+					PRINTFORMW 「주군도 어서 이즈나에게 사랑한다 해주세요~」
 					RESETCOLOR
-					PRINTFORML %ANAME(MASTER)%또한 이즈나를 사랑하기에 이즈나에게 사랑을 속삭였다
+					PRINTFORMW %ANAME(MASTER)%또한 이즈나를 사랑하기에 이즈나에게 사랑을 속삭였다
 				CASE 4
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「이즈나는 주군과 함께있는 지금이 가장 행복합니다♪」
-					PRINTFORML 「주군을 위해서라면 불초 이즈나 뭐든지 할 수 있기에 사양말고 말해주세요♪」
-					PRINTFORML 「물론 야한것도 가능하답니다? 주군♥」
+					PRINTFORMW 「주군을 위해서라면 불초 이즈나 뭐든지 할 수 있기에 사양말고 말해주세요♪」
+					PRINTFORMW 「물론 야한것도 가능하답니다? 주군♥」
 					RESETCOLOR
 			ENDSELECT
 		;연인
@@ -5784,17 +5784,17 @@ IF SELECTCOM == 300
 			SELECTCASE RAND:5
 				CASE 0
 					SETCOLOR 칼라_핑크
-					PRINTFORML 이즈나에게 좋아한다고 말해보았다
-					PRINTFORML
-					PRINTFORML 이즈나는 아직 말로 꺼내긴 부끄러운지 말없이 %ANAME(MASTER)%에게 안겼다
+					PRINTFORMW 이즈나에게 좋아한다고 말해보았다
+					PRINTFORMW
+					PRINTFORMW 이즈나는 아직 말로 꺼내긴 부끄러운지 말없이 %ANAME(MASTER)%에게 안겼다
 				CASE 1
-					PRINTFORML
+					PRINTFORMW
 				CASE 2
-					PRINTFORML
+					PRINTFORMW
 				CASE 3
-					PRINTFORML
+					PRINTFORMW
 				CASE 4
-					PRINTFORML
+					PRINTFORMW
 			ENDSELECT
 		;연모OR복종
 		ELSEIF TALENT:연모 || TALENT:복종
@@ -5802,58 +5802,57 @@ IF SELECTCOM == 300
 				CASE 0
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「주군의 곁에 있으면... 뭔가 행복한 기분이 듭니다」
-					PRINTFORML 「...이것이 주군에게 부려지는 닌자의 기분일까요?」
+					PRINTFORMW 「...이것이 주군에게 부려지는 닌자의 기분일까요?」
 					RESETCOLOR
 				CASE 1
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「이즈나의 꼬리에 흥미 있으신가요? 주군?」
-					PRINTFORML 「음... 대신 상냥하게 만져주세요?」
+					PRINTFORMW 「음... 대신 상냥하게 만져주세요?」
 					RESETCOLOR
 				CASE 2
-					PRINTFORML
+					PRINTFORMW
 				CASE 3
-					PRINTFORML
+					PRINTFORMW
 				CASE 4
-					PRINTFORML
+					PRINTFORMW
 			ENDSELECT
 		;친구
 		ELSEIF TALENT:친구
 			SELECTCASE RAND:5
 				CASE 0
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「에헤헤... 주군과 이야기하는건 즐겁네요!닌닌~」
+					PRINTFORMW 「에헤헤... 주군과 이야기하는건 즐겁네요!닌닌~」
 					RESETCOLOR
 				CASE 1
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「흥~ 흥흥흥~ 흥♪ 이즈나이즈나 캥캥~ ♪」
+					PRINTFORMW 「흥~ 흥흥흥~ 흥♪ 이즈나이즈나 캥캥~ ♪」
 					RESETCOLOR
 				CASE 2
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「주군! 이번에 시바견왕왕 감독의 닌자 시대극 신작이 나왔다고합니다!」
-					PRINTFORML 「주군께서 괜찮으시다면 이즈나와 함께 보지 않으시겠습니까...?」
+					PRINTFORMW 「주군께서 괜찮으시다면 이즈나와 함께 보지 않으시겠습니까...?」
 					RESETCOLOR
-					PRINTFORML 이즈나의 간절한 눈빛에 %조사처리(ANAME(MASTER),"은")% 이즈나의 제안을 승낙했다
+					PRINTFORMW 이즈나의 간절한 눈빛에 %조사처리(ANAME(MASTER),"은")% 이즈나의 제안을 승낙했다
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「에헤헤... 감사합니다! 주군! 닌닌~」
-
+					PRINTFORMW 「에헤헤... 감사합니다! 주군! 닌닌~」
 				CASE 3
-					PRINTFORML
+					PRINTFORMW F C3
 				CASE 4
-					PRINTFORML
+					PRINTFORMW F
 			ENDSELECT
 		;그 이외
 		ELSE
 			SELECTCASE RAND:5
 				CASE 0
-					PRINTFORML
+					PRINTFORMW NON C0
 				CASE 1
-					PRINTFORML
+					PRINTFORMW NON C1
 				CASE 2
-					PRINTFORML
+					PRINTFORMW NON C2
 				CASE 3
-					PRINTFORML
+					PRINTFORMW NON C3
 				CASE 4
-					PRINTFORML
+					PRINTFORMW NON C4
 			ENDSELECT
 		ENDIF
 	ENDIF
@@ -6468,59 +6467,59 @@ IF SELECTCOM == 340
 			;연인
 			IF TALENT:연인
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")% 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 가볍게 키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「츗♥ 좋아해요 주군♥ 헤헷」
+				PRINTFORMW 「츗♥ 좋아해요 주군♥ 헤헷」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 달콤한 숨결이 닿았다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「이즈나의 첫키스는 역시 주군께 주고싶었어요♥」
+					PRINTFORMW 「이즈나의 첫키스는 역시 주군께 주고싶었어요♥」
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「놀라셨나요 주군? 헤헷♥」
+					PRINTFORMW 「놀라셨나요 주군? 헤헷♥」
 				ENDIF
 				RESETCOLOR
 				PRINTFORMW 이즈나의 귀와 꼬리는 기쁜듯 흔들리고있다
 			;연모 or 복종 
 			ELSEIF TALENT:연모 || TALENT:복종 || TALENT:친구
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")% 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 가볍게 키스당했다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 이즈나의 첫키스를 받은 기분은 어떠신가요? 주군?」
+					PRINTFORMW 「츗... 이즈나의 첫키스를 받은 기분은 어떠신가요? 주군?」
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 이즈나의 키스는 어떠신가요?」
+					PRINTFORMW 「츗... 이즈나의 키스는 어떠신가요?」
 				ENDIF
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
-				PRINTFORML (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
-				PRINTFORML (그렇지만 주군이라면...♥)
+				PRINTFORMW (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
+				PRINTFORMW (그렇지만 주군이라면...♥)
 				RESETCOLOR
 			;그 이외
 			ELSE
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")% 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 가볍게 키스당했다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 이즈나의 첫키스를 받은 기분은 어떠신가요? 주군♪」
+					PRINTFORMW 「츗... 이즈나의 첫키스를 받은 기분은 어떠신가요? 주군♪」
 					RESETCOLOR
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 이즈나의 키스는 어떠신가요 주군♪」
+					PRINTFORMW 「츗... 이즈나의 키스는 어떠신가요 주군♪」
 					RESETCOLOR
 				ENDIF
 				PRINTFORMW 입술을 떼어 놓자 약간 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
-				PRINTFORML (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
+				PRINTFORMW (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
 				RESETCOLOR
 			ENDIF
 		;2회째 이후
@@ -6530,15 +6529,15 @@ IF SELECTCOM == 340
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 연인끼리라도 약간 수줍네요♪」
+						PRINTFORMW 「츗... 연인끼리라도 약간 수줍네요♪」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 이걸로 끝인가요?」
+						PRINTFORMW 「츗... 이걸로 끝인가요?」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 좀 더...♥」
+						PRINTFORMW 「츗... 좀 더...♥」
 						RESETCOLOR
 				ENDSELECT
 			;그 이외
@@ -6546,15 +6545,15 @@ IF SELECTCOM == 340
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 뭔가 수줍네요」
+						PRINTFORMW 「츗... 뭔가 수줍네요」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 만족하셨나요?」
+						PRINTFORMW 「츗... 만족하셨나요?」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 어땠나요?」
+						PRINTFORMW 「츗... 어땠나요?」
 						RESETCOLOR
 				ENDSELECT
 			ENDIF
@@ -6566,12 +6565,12 @@ IF SELECTCOM == 340
 			;연인
 			IF TALENT:연인
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				RESETCOLOR
 				PRINTFORMW 이즈나를 부르는 %AMANE(MASTER)%의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 가볍게 키스했다 ;처음실행이므로 첫키스판정 후 나오게해야함 이건 그냥 커맨드 첫 실행임
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗♥ 이즈나의 첫키스 가져가주셨네요♥」
+					PRINTFORMW 「츗♥ 이즈나의 첫키스 가져가주셨네요♥」
 					RESETCOLOR
 				ELSE
 					
@@ -6579,62 +6578,62 @@ IF SELECTCOM == 340
 				PRINTFORMW 입술을 떼어 놓자 달콤한 숨결이 닿았다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「역시 이즈나의 첫키스는 주군께 주고싶었어요♥」
+					PRINTFORMW 「역시 이즈나의 첫키스는 주군께 주고싶었어요♥」
 					RESETCOLOR
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「연인끼리의 키스는 기분좋네요♥」
+					PRINTFORMW 「연인끼리의 키스는 기분좋네요♥」
 					RESETCOLOR
 				ENDIF
 				PRINTFORMW 이즈나의 귀와 꼬리는 기쁜듯 흔들리고있다
 			;연모 or 복종 
 			ELSEIF TALENT:연모 || TALENT:복종 || TALENT:친구
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				RESETCOLOR
 				PRINTFORMW 이즈나를 부르는 %AMANE(MASTER)%의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 가볍게 키스했다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 이즈나의 첫키스 가져가셧네요♪」
+					PRINTFORMW 「츗... 이즈나의 첫키스 가져가셧네요♪」
 					RESETCOLOR
 					PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 					SETCOLOR 칼라_핑크
-					PRINTFORML (주군께서 이즈나의 첫키스를 가져가셨어요...)
-					PRINTFORML (그렇지만 주군이라면 나쁘지 않을지도...♥)
+					PRINTFORMW (주군께서 이즈나의 첫키스를 가져가셨어요...)
+					PRINTFORMW (그렇지만 주군이라면 나쁘지 않을지도...♥)
 					RESETCOLOR
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 주,주군? 갑자기 이즈나에게 키스하신다니???」
+					PRINTFORMW 「츗... 주,주군? 갑자기 이즈나에게 키스하신다니???」
 					RESETCOLOR
 					PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 					SETCOLOR 칼라_핑크
-					PRINTFORML (갑자기 주군께서 이즈나에게 키스를...)
-					PRINTFORML (뭐... 주군께서 원하신다면 이즈나는 괜찮지만♥)
+					PRINTFORMW (갑자기 주군께서 이즈나에게 키스를...)
+					PRINTFORMW (뭐... 주군께서 원하신다면 이즈나는 괜찮지만♥)
 					RESETCOLOR
 				ENDIF
 			;그 이외
 			ELSE
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				RESETCOLOR
 				PRINTFORMW 이즈나를 부르는 %AMANE(MASTER)%의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 가볍게 키스했다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 이즈나의 첫키스 가져가셧네요♪」
+					PRINTFORMW 「츗... 이즈나의 첫키스 가져가셧네요♪」
 					RESETCOLOR
 					PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 					SETCOLOR 칼라_핑크
-					PRINTFORML (주군께서 이즈나의 첫키스를 가져가셨어요...)
-					PRINTFORML (뭐, 이즈나는 주군이라면 괜찮다 생각하지만...)
+					PRINTFORMW (주군께서 이즈나의 첫키스를 가져가셨어요...)
+					PRINTFORMW (뭐, 이즈나는 주군이라면 괜찮다 생각하지만...)
 					RESETCOLOR
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「츗... 주,주군? 갑자기 이즈나에게 키스는 왜...?」
+					PRINTFORMW 「츗... 주,주군? 갑자기 이즈나에게 키스는 왜...?」
 					RESETCOLOR
 					PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 					SETCOLOR 칼라_핑크
-					PRINTFORML (갑자기 주군께서 이즈나에게 키스를...)
-					PRINTFORML (뭐... 딱히 싫은건 아니지만...)
+					PRINTFORMW (갑자기 주군께서 이즈나에게 키스를...)
+					PRINTFORMW (뭐... 딱히 싫은건 아니지만...)
 					RESETCOLOR
 				ENDIF
 			ENDIF
@@ -6645,15 +6644,15 @@ IF SELECTCOM == 340
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 연인끼리라도 약간 수줍네요♪」
+						PRINTFORMW 「츗... 연인끼리라도 약간 수줍네요♪」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 이걸로 끝인가요?」
+						PRINTFORMW 「츗... 이걸로 끝인가요?」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 좀 더...♥」
+						PRINTFORMW 「츗... 좀 더...♥」
 						RESETCOLOR
 				ENDSELECT
 			;그 이외
@@ -6661,15 +6660,15 @@ IF SELECTCOM == 340
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 뭔가 수줍네요」
+						PRINTFORMW 「츗... 뭔가 수줍네요」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 만족하셨나요?」
+						PRINTFORMW 「츗... 만족하셨나요?」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗... 어땠나요?」
+						PRINTFORMW 「츗... 어땠나요?」
 						RESETCOLOR
 				ENDSELECT
 			ENDIF
@@ -6688,57 +6687,57 @@ IF SELECTCOM == 341
 		;연인
 			IF TALENT:연인
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")%을 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏...♥ 응츄, 츗... 죠아해요...♥」
+				PRINTFORMW 「응읏...♥ 응츄, 츗... 죠아해요...♥」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 달콤한 숨결이 닿았다
 				SETCOLOR 칼라_핑크
 				IF TALENT:키스미경험
-					PRINTFORML 「푸하... 이즈나의 첫키스는 역시 주군께 주고싶었어요♥」
+					PRINTFORMW 「푸하... 이즈나의 첫키스는 역시 주군께 주고싶었어요♥」
 				ELSE
-					PRINTFORML 「푸하... 이즈나의 키스, 기분 좋으셨나요♥」
+					PRINTFORMW 「푸하... 이즈나의 키스, 기분 좋으셨나요♥」
 				ENDIF
 				RESETCOLOR
 				PRINTFORMW 이즈나의 귀와 꼬리는 기쁜듯 흔들리고있다
 			;연모 or 복종 
 			ELSEIF TALENT:연모 || TALENT:복종 || TALENT:친구
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")% 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏, 츗... 츄팟...」
+				PRINTFORMW 「응읏, 츗... 츄팟...」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
 				IF TALENT:키스미경험
-					PRINTFORML 「푸하... 그... 이즈나의 첫키스는 어떠셨나요...?」
+					PRINTFORMW 「푸하... 그... 이즈나의 첫키스는 어떠셨나요...?」
 				ELSE
-					PRINTFORML 「푸하... 그... 이즈나의 키스는 어떠셨나요...?」
+					PRINTFORMW 「푸하... 그... 이즈나의 키스는 어떠셨나요...?」
 				ENDIF
-				PRINTFORML (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
-				PRINTFORML (그렇지만 주군이라면...♥)
+				PRINTFORMW (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
+				PRINTFORMW (그렇지만 주군이라면...♥)
 				RESETCOLOR
 			;그 이외
 			ELSE
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")% 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏... 응츄, 츗... 츄팟...」
+				PRINTFORMW 「응읏... 응츄, 츗... 츄팟...」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 약간 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
 				IF TALENT:키스미경험
-					PRINTFORML 「푸흐... 이즈나의 첫키스는 어떠셨나요?」
+					PRINTFORMW 「푸흐... 이즈나의 첫키스는 어떠셨나요?」
 				ELSE
-					PRINTFORML 「푸흐... 이즈나의 키스는 어떠셨나요?」
+					PRINTFORMW 「푸흐... 이즈나의 키스는 어떠셨나요?」
 				ENDIF
-				PRINTFORML (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
+				PRINTFORMW (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
 				RESETCOLOR
 			ENDIF
 		;2회째 이후
@@ -6748,15 +6747,15 @@ IF SELECTCOM == 341
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츄룻... 주군에게 키스하는것 만으로 기분이 좋아져서...♥」
+						PRINTFORMW 「츄룻... 주군에게 키스하는것 만으로 기분이 좋아져서...♥」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츄풋... 사랑하는 주군과의 키스는 이렇게나 좋은거네요♥」
+						PRINTFORMW 「츄풋... 사랑하는 주군과의 키스는 이렇게나 좋은거네요♥」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「응우... 츄우...츗, 주군... 좀 더...♥」
+						PRINTFORMW 「응우... 츄우...츗, 주군... 좀 더...♥」
 						RESETCOLOR
 				ENDSELECT
 			;그 이외
@@ -6764,15 +6763,15 @@ IF SELECTCOM == 341
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「응우...... 츗」
+						PRINTFORMW 「응우...... 츗」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗츄...... 이즈나와의 키스 싫지는 않나요?」
+						PRINTFORMW 「츗츄...... 이즈나와의 키스 싫지는 않나요?」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「...응 어떠신가요? 주군?」
+						PRINTFORMW 「...응 어떠신가요? 주군?」
 						RESETCOLOR
 				ENDSELECT
 			ENDIF
@@ -6784,16 +6783,16 @@ IF SELECTCOM == 341
 		;연인
 			IF TALENT:연인
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				RESETCOLOR
 				PRINTFORMW 이즈나를 부르는 %AMANE(MASTER)%의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 키스했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏...?♥ 응츄, ...♥」
+				PRINTFORMW 「응읏...?♥ 응츄, ...♥」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 달콤한 숨결이 닿았다
 				SETCOLOR 칼라_핑크
 				IF TALENT:키스미경험
-					PRINTFORML 「푸하... 이즈나의 첫키스 주군께서 가져가주셨네요♥」
+					PRINTFORMW 「푸하... 이즈나의 첫키스 주군께서 가져가주셨네요♥」
 				ELSE
 				ENDIF
 				RESETCOLOR
@@ -6801,40 +6800,40 @@ IF SELECTCOM == 341
 			;연모 or 복종 
 			ELSEIF TALENT:연모 || TALENT:복종 || TALENT:친구
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				RESETCOLOR
 				PRINTFORMW 이즈나를 부르는 %AMANE(MASTER)%의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 키스했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏...? 응츄, 츗...」
+				PRINTFORMW 「응읏...? 응츄, 츗...」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주, 주군? 갑자기 키스하신다니...」
+				PRINTFORMW 「주, 주군? 갑자기 키스하신다니...」
 				IF TALENT:키스미경험
-					PRINTFORML (주군께서 이즈나의 첫키스를 가져가셨어요...)
+					PRINTFORMW (주군께서 이즈나의 첫키스를 가져가셨어요...)
 				ELSE
-					PRINTFORML (갑자기 주군꼐서 이즈나에게 키스를...)
+					PRINTFORMW (갑자기 주군꼐서 이즈나에게 키스를...)
 				ENDIF
-				PRINTFORML (그렇지만 주군이라면 나쁘지 않을지도...♥)
+				PRINTFORMW (그렇지만 주군이라면 나쁘지 않을지도...♥)
 				RESETCOLOR
 			;그 이외
 			ELSE
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				RESETCOLOR
 				PRINTFORMW 이즈나를 부르는 %AMANE(MASTER)%의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 키스했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏...? 응츄, 츗...」
+				PRINTFORMW 「응읏...? 응츄, 츗...」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 약간 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주, 주군? 갑자기 키스하신다니...」
+				PRINTFORMW 「주, 주군? 갑자기 키스하신다니...」
 				IF TALENT:키스미경험
-					PRINTFORML (주군께서 이즈나의 첫키스를 가져가셨어요...)
+					PRINTFORMW (주군께서 이즈나의 첫키스를 가져가셨어요...)
 				ELSE
-					PRINTFORML (갑자기 주군꼐서 이즈나에게 키스를...)
+					PRINTFORMW (갑자기 주군꼐서 이즈나에게 키스를...)
 				ENDIF
-				PRINTFORML (뭐 딱히 주군이라면 괜찮지만...)
+				PRINTFORMW (뭐 딱히 주군이라면 괜찮지만...)
 				RESETCOLOR
 			ENDIF
 		;2회째 이후
@@ -6844,15 +6843,15 @@ IF SELECTCOM == 341
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츄팟... 주군에게 키스 당하는 것 만으로 가슴이 따듯해져서...♥」
+						PRINTFORMW 「츄팟... 주군에게 키스 당하는 것 만으로 가슴이 따듯해져서...♥」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「응우... 츄우...츗, 주군... 좀 더...♥」
+						PRINTFORMW 「응우... 츄우...츗, 주군... 좀 더...♥」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츄우...츗 응우..., 주군...♥」
+						PRINTFORMW 「츄우...츗 응우..., 주군...♥」
 						RESETCOLOR
 				ENDSELECT
 			;그 이외
@@ -6860,15 +6859,15 @@ IF SELECTCOM == 341
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「응우...... 츗」
+						PRINTFORMW 「응우...... 츗」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츄... 이즈나는 괜찮으니깐...」
+						PRINTFORMW 「츄... 이즈나는 괜찮으니깐...」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「주군이 좋으시다면...」
+						PRINTFORMW 「주군이 좋으시다면...」
 						RESETCOLOR
 				ENDSELECT
 			ENDIF
@@ -6887,62 +6886,62 @@ IF SELECTCOM == 342
 		;연인
 			IF TALENT:연인
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW %조사처리(AMANE(MASTER),"을")% 부르는 이즈나의 목소리에 %조사처리(AMANE(MASTER),"이")% 얼굴을 돌리자 이즈나에게 딥키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏...♥ 응츄, 츗... 죠아해요...♥」
-				PRINTFORML 「쥬군의 침...♥ 죠아서...」
+				PRINTFORMW 「응읏...♥ 응츄, 츗... 죠아해요...♥」
+				PRINTFORMW 「쥬군의 침...♥ 죠아서...」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 달콤한 숨결이 닿았다
 				IF TALENT:키스미경험
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「푸하아... 이즈나의 첫키스는 딥키스네요♥ 주군은 좋으셨나요♥」
+					PRINTFORMW 「푸하아... 이즈나의 첫키스는 딥키스네요♥ 주군은 좋으셨나요♥」
 					RESETCOLOR
 				ELSE
 					SETCOLOR 칼라_핑크
-					PRINTFORML 「푸하아... 이즈나와의 첫 딥키스는 어떠셨나요? 주군♥」
+					PRINTFORMW 「푸하아... 이즈나와의 첫 딥키스는 어떠셨나요? 주군♥」
 					RESETCOLOR
 				ENDIF
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「에헤헤... 이즈나는 엄청 좋았어요!」
+				PRINTFORMW 「에헤헤... 이즈나는 엄청 좋았어요!」
 				RESETCOLOR
 				PRINTFORMW 이즈나의 귀와 꼬리는 기쁜듯 흔들리고있다
 			;연모 or 복종 
 			ELSEIF TALENT:연모 || TALENT:복종 || TALENT:친구
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW 당신을 부르는 이즈나의 목소리에 당신이 얼굴을 돌리자 이즈나에게 딥키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏... 응츄, 츗... 츄팟... 츄릅...♥」
+				PRINTFORMW 「응읏... 응츄, 츗... 츄팟... 츄릅...♥」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「푸하아... 그... 이즈나의 딥키스 어떠셨나요...?」
+				PRINTFORMW 「푸하아... 그... 이즈나의 딥키스 어떠셨나요...?」
 				IF TALENT:키스미경험
-					PRINTFORML 「이즈나의 첫키스였다구요?」
+					PRINTFORMW 「이즈나의 첫키스였다구요?」
 				ENDIF
-				PRINTFORML (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
-				PRINTFORML (그렇지만 주군이라면...♥)
+				PRINTFORMW (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
+				PRINTFORMW (그렇지만 주군이라면...♥)
 				RESETCOLOR
 			;그 이외
 			ELSE
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「주군, 잠시 이쪽좀 봐주시겠어요?」
+				PRINTFORMW 「주군, 잠시 이쪽좀 봐주시겠어요?」
 				RESETCOLOR
 				PRINTFORMW 당신을 부르는 이즈나의 목소리에 당신이 얼굴을 돌리자 이즈나에게 딥키스당했다
 				SETCOLOR 칼라_핑크
-				PRINTFORML 「응읏... 응츄, 츗... 츄팟...」
+				PRINTFORMW 「응읏... 응츄, 츗... 츄팟...」
 				RESETCOLOR
 				PRINTFORMW 입술을 떼어 놓자 약간 붉어진 이즈나의 얼굴이 보였다
 				SETCOLOR 칼라_핑크
 				IF TALENT:키스미경험
-					PRINTFORML 「푸하아... 이즈나의 첫키스는 어떠셨나요?」
+					PRINTFORMW 「푸하아... 이즈나의 첫키스는 어떠셨나요?」
 				ELSE
-					PRINTFORML 「푸하아... 이즈나의 딥키스 어떠셨나요?」
+					PRINTFORMW 「푸하아... 이즈나의 딥키스 어떠셨나요?」
 				ENDIF
-				PRINTFORML (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
+				PRINTFORMW (이즈나가 하긴했지만 역시 좀 부끄럽네요...)
 				RESETCOLOR
 			ENDIF
 		;2회째 이후
@@ -6952,17 +6951,17 @@ IF SELECTCOM == 342
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「응읏... 응츄, 츗... 츄팟... 츄릅...♥ 츗츄...♥」
+						PRINTFORMW 「응읏... 응츄, 츗... 츄팟... 츄릅...♥ 츗츄...♥」
 						PRINTFORMW 두 사람은 격렬히 서로의 혀를 탐하고있다
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츄우...츗 응우..., 주군...♥ 응읏...♥」
-						PRINTFORML (주군과 키스하면서 머리 만져지는 것이 좋아♥)
+						PRINTFORMW 「츄우...츗 응우..., 주군...♥ 응읏...♥」
+						PRINTFORMW (주군과 키스하면서 머리 만져지는 것이 좋아♥)
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「응우... 츄우...츗, 주군... 좀 더...♥」
+						PRINTFORMW 「응우... 츄우...츗, 주군... 좀 더...♥」
 						RESETCOLOR
 				ENDSELECT
 			;그 이외
@@ -6970,15 +6969,15 @@ IF SELECTCOM == 342
 				SELECTCASE RAND:3
 					CASE 0
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗...... 응우... 푸하아」
+						PRINTFORMW 「츗...... 응우... 푸하아」
 						RESETCOLOR
 					CASE 1
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「츗츄...... 츄르, 츄픗...」
+						PRINTFORMW 「츗츄...... 츄르, 츄픗...」
 						RESETCOLOR
 					CASE 2
 						SETCOLOR 칼라_핑크
-						PRINTFORML 「...응, 츄...... 응우...」
+						PRINTFORMW 「...응, 츄...... 응우...」
 						RESETCOLOR
 				ENDSELECT
 			ENDIF
@@ -6989,29 +6988,29 @@ IF SELECTCOM == 342
 		IF IS_COM_FIRST()
 		;연인
 			IF TALENT:연인
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				PRINTFORMW 이즈나를 부르는 당신의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 딥키스했다
-				PRINTFORML 「응읏...?♥ 응츄, 츗... 응...♥」
+				PRINTFORMW 「응읏...?♥ 응츄, 츗... 응...♥」
 				PRINTFORMW 입술을 떼어 놓자 달콤한 숨결이 닿았다
-				PRINTFORML 「푸후... 이즈나의 첫키스 딥키스로 주군께서 가져가주셨네요♥」
+				PRINTFORMW 「푸후... 이즈나의 첫키스 딥키스로 주군께서 가져가주셨네요♥」
 				PRINTFORMW 이즈나의 귀와 꼬리는 기쁜듯 흔들리고있다
 			;연모 or 복종 
 			ELSEIF TALENT:연모 || TALENT:복종 || TALENT:친구
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				PRINTFORMW 이즈나를 부르는 당신의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 딥키스했다
-				PRINTFORML 「응읏...? 응츄, 츗... 츄팟...」
+				PRINTFORMW 「응읏...? 응츄, 츗... 츄팟...」
 				PRINTFORMW 입술을 떼어 놓자 부끄러운듯이 붉어진 이즈나의 얼굴이 보였다
-				PRINTFORML 「저... 기분 좋으셨나요...? 주군?」
-				PRINTFORML (주군께서 딥키스로 이즈나의 첫키스를 가져가셨어요...)
-				PRINTFORML (그렇지만 주군이라면 나쁘지 않을지도...♥)
+				PRINTFORMW 「저... 기분 좋으셨나요...? 주군?」
+				PRINTFORMW (주군께서 딥키스로 이즈나의 첫키스를 가져가셨어요...)
+				PRINTFORMW (그렇지만 주군이라면 나쁘지 않을지도...♥)
 			;그 이외
 			ELSE
-				PRINTFORML 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
+				PRINTFORMW 「주군? 잠시 이쪽을 봐달라니, 무슨일인가요?」
 				PRINTFORMW 이즈나를 부르는 당신의 목소리에 이즈나가 얼굴을 돌린 후 이즈나에게 딥키스했다
-				PRINTFORML 「응읏...? 응츄, 츗... 츄팟...」
+				PRINTFORMW 「응읏...? 응츄, 츗... 츄팟...」
 				PRINTFORMW 입술을 떼어 놓자 약간 붉어진 이즈나의 얼굴이 보였다
-				PRINTFORML 「기분 좋으셨나요...? 주군?」
-				PRINTFORML (주군에게 바친 첫키스가 딥키스라... 역시 좀 부끄럽네요...)
+				PRINTFORMW 「기분 좋으셨나요...? 주군?」
+				PRINTFORMW (주군에게 바친 첫키스가 딥키스라... 역시 좀 부끄럽네요...)
 			ENDIF
 		;2회째 이후
 		ELSE
@@ -7019,23 +7018,23 @@ IF SELECTCOM == 342
 			IF TALENT:연인
 				SELECTCASE RAND:3
 					CASE 0
-						PRINTFORML 「응읏... 응츄, 츗... 츄팟... 츄릅...♥ 츗츄...♥」
+						PRINTFORMW 「응읏... 응츄, 츗... 츄팟... 츄릅...♥ 츗츄...♥」
 						PRINTFORMW 두 사람은 격렬히 서로의 혀를 탐하고있다
 					CASE 1
-						PRINTFORML 「츄우...츗 응우..., 주군...♥ 응읏...♥」
-						PRINTFORML (주군과 키스하면서 머리 만져지는 것이 좋아♥)
+						PRINTFORMW 「츄우...츗 응우..., 주군...♥ 응읏...♥」
+						PRINTFORMW (주군과 키스하면서 머리 만져지는거 좋아♥)
 					CASE 2
-						PRINTFORML 「응우... 츄우...츗, 주군... 좀 더...♥」
+						PRINTFORMW 「응우... 츄우...츗, 주군... 좀 더...♥」
 				ENDSELECT
 			;그 이외
 			ELSE
 				SELECTCASE RAND:3
 					CASE 0
-						PRINTFORML 「츗...... 응우... 푸하아」
+						PRINTFORMW 「츗...... 응우... 푸하아」
 					CASE 1
-						PRINTFORML 「츗츄...... 츄르, 츄픗...」
+						PRINTFORMW 「츗츄...... 츄르, 츄픗...」
 					CASE 2
-						PRINTFORML 「...응, 츄...... 응우...」
+						PRINTFORMW 「...응, 츄...... 응우...」
 				ENDSELECT
 			ENDIF
 		ENDIF
