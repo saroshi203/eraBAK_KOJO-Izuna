@@ -127,30 +127,52 @@ ENDIF
 ;고백 실패
 ;-------------------------------------------------
 IF ARG == 3
-	SETCOLOR 칼라_핑크
-	PRINTFORMW 「주군, 주군께서 이즈나를 그렇게 생각해주신다는건 정말 기뻐요...」
-	RESETCOLOR
-	PRINTFORMW 이즈나의 표정은 어쩐지 기뻐보이면서 괴로워보이는 표정이다
-	SETCOLOR 칼라_핑크
-	PRINTFORMW 「하지만 이즈나는 아직 이 마음이 주군에 대한 충의인지 아니면 사랑인지 잘 모르겠어요...」
-	PRINTFORMW 「그치만 이즈나는 주군이 싫은것이 절대 아니니깐 이 마음이 정해지면 언젠간 꼭 그때...」
-	PRINTFORMW 「네, 꼭 그때 다시 이즈나에게 고백해주세요 주군!」
-	RESETCOLOR
+	IF TALENT:연모
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「주군, 주군께서 이즈나를 그렇게 생각해주신다는건 정말 기뻐요...」
+		RESETCOLOR
+		PRINTFORMW 이즈나의 표정은 어쩐지 기뻐보이면서 괴로워보이는 표정이다
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「하지만 이즈나는 아직 이 마음이 주군에 대한 충의인지 아니면 사랑인지 잘 모르겠어요...」
+		PRINTFORMW 「그치만 이즈나는 주군이 싫은것이 절대 아니니깐 이 마음이 정해지면 언젠간 꼭 그때...」
+		PRINTFORMW 「네, 꼭 그때 다시 이즈나에게 고백해주세요 주군!」
+		RESETCOLOR
 	CFLAG:850 += 1
 	RETURN 0
+	ELSE
+	SETCOLOR 칼라_핑크
+		PRINTFORMW 「선생님, 선생님께서 이즈나를 그렇게 생각해주신다는건 정말 기뻐요...」
+		RESETCOLOR
+		PRINTFORMW 이즈나의 표정은 어쩐지 기뻐보이면서 괴로워보이는 표정이다
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「하지만 이즈나는 아직 이 마음을 잘 모르겠어요...」
+		PRINTFORMW 「그치만 이즈나는 선생님이 싫은것이 절대 아니니깐 이 마음이 정해지면 언젠간 꼭 그때...」
+		PRINTFORMW 「네, 꼭 그때 다시 이즈나에게 고백해주세요 선생님!」
+		RESETCOLOR
+	ENDIF
 ENDIF
 
 ;-------------------------------------------------
 ;쓰러트리기 성공(술에 취함의 영향·합의는 얻을 수 없다)
 ;-------------------------------------------------
 IF ARG == 4
-	SETCOLOR 칼라_핑크
-	PRINTFORMW 「꺅♥ 주,주군?」
-	PRINTFORMW 「갑자기 이즈나를 억지로 밀어 넘어트린다니?」
-	PRINTFORMW 「이번만 이라구요...?」
-	RESETCOLOR
-	PRINTFORMW 취기가 돌아 힘이 들어가지 않는 이즈나는 %AMANE(MASTER)%에게 쉽게 말어 넘어트려졌다
-	RETURN 0
+	IF TALENT:연모 || TALENT:연인 || TALENT:친애
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「꺅♥ 주,주군?」
+		PRINTFORMW 「갑자기 이즈나를 억지로 밀어 넘어트린다니?」
+		PRINTFORMW 「이번만 이라구요...?」
+		RESETCOLOR
+		PRINTFORMW 취기가 돌아 힘이 들어가지 않는 이즈나는 %AMANE(MASTER)%에게 쉽게 말어 넘어트려졌다
+		RETURN 0
+	ELSE
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「꺅♥ ㅅ,선생님?」
+		PRINTFORMW 「갑자기 이즈나를 억지로 밀어 넘어트린다니?」
+		PRINTFORMW 「이번만 이라구요...?」
+		RESETCOLOR
+		PRINTFORMW 취기가 돌아 힘이 들어가지 않는 이즈나는 %AMANE(MASTER)%에게 쉽게 말어 넘어트려졌다
+		RETURN 0
+	ENDIF
 ENDIF
 
 ;-------------------------------------------------
@@ -197,7 +219,7 @@ IF ARG == 5
 	;그 이외
 	ELSE
 		SETCOLOR 칼라_핑크
-		PRINTFORMW 「주,주군?」
+		PRINTFORMW 「ㅅ,선생님?」
 		RESETCOLOR
 		PRINTFORMW 이즈나는 당황하며 %AMANE(MASTER)%에게 밀어 넘어트려졌다
 		SETCOLOR 칼라_핑크
@@ -205,12 +227,12 @@ IF ARG == 5
 		RESETCOLOR
 		PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나에게 그래도 오히려 괜찮다 말했다
 		SETCOLOR 칼라_핑크
-		PRINTFORMW 「네... 그것이 주군의 명령이라면 어쩔 수 없겠네요」
+		PRINTFORMW 「네... 선생님이 그리 말하신다면 어쩔 수 없겠네요」
 		RESETCOLOR
 		PRINTFORMW 이즈나는 당황하는 기색이지만 어쩐지 귀와 꼬리가 흔들리고있었다
 		IF TALENT:처녀
 				SETCOLOR 칼라_핑크
-				PRINTFORMW 「이즈나는 아직 처음이기에... 상냥하게 부탁드려요, 주군?」
+				PRINTFORMW 「이즈나는 아직 처음이기에... 상냥하게 부탁드려요, 선생님?」
 				RESETCOLOR
 			ENDIF
 	ENDIF
@@ -221,16 +243,29 @@ ENDIF
 ;쓰러트리기 실패
 ;-------------------------------------------------
 IF ARG == 6
-	SETCOLOR 칼라_핑크
-	PRINTFORMW 「캐앵? 주,주군? 잠깐!」
-	RESETCOLOR
-	PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나에게 밀쳐졌다
-	SETCOLOR 칼라_핑크
-	PRINTFORMW 「주군, 이즈나도 여자이기에 일에는 순서가 있다고 생각합니다...」
-	RESETCOLOR
-	PRINTFORMW 이즈나의 목소리는 어딘가 토라진 느낌이였고
-	PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나의 기분을 달래기위해 필사적으로 사과했다
-	RETURN 0
+	IF TALENT:연모 || TALENT:연인 || TALENT:친애
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「캐앵? 주,주군? 잠깐!」
+		RESETCOLOR
+		PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나에게 밀쳐졌다
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「주군, 이즈나도 여자이기에 일에는 순서가 있다고 생각합니다...」
+		RESETCOLOR
+		PRINTFORMW 이즈나의 목소리는 어딘가 토라진 느낌이였고
+		PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나의 기분을 달래기위해 필사적으로 사과했다
+		RETURN 0
+	ELSE
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「캐앵? ㅅ,선생님? 잠깐!」
+		RESETCOLOR
+		PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나에게 밀쳐졌다
+		SETCOLOR 칼라_핑크
+		PRINTFORMW 「선생님, 이즈나도 여자이기에 일에는 순서가 있다고 생각합니다...」
+		RESETCOLOR
+		PRINTFORMW 이즈나의 목소리는 어딘가 토라진 느낌이였고
+		PRINTFORMW %조사처리(ANAME(MASTER),"은")% 이즈나의 기분을 달래기위해 필사적으로 사과했다
+		RETURN 0
+	ENDIF
 ENDIF
 
 ;-------------------------------------------------
@@ -569,12 +604,12 @@ ENDIF
 ;-------------------------------------------------
 IF ARG == 60
 	SETCOLOR 칼라_핑크
-	PRINTFORMW (주군을 생각할떄면 이즈나의 가슴이 엄청 콩닥거려서...)
-	PRINTFORMW (주군과 함께 있을 떄의 이 두근거림은 사명감일까요?)
-	PRINTFORMW (그리고 주군의 곁에 있으면 행복한 기분이 들어서...)
+	PRINTFORMW (선생님을 생각할떄면 이즈나의 가슴이 엄청 콩닥거려서...)
+	PRINTFORMW (선생님과 함께 있을 떄의 이 두근거림은...)
+	PRINTFORMW (그리고 선생님의 곁에 있으면 행복한 기분이 들어서...)
 	IF CFLAG:850 >= 1
 		PRINTFORMW (이 기분이 사랑일까요...?)
-		PRINTFORMW (그치만 이즈나는 주군을 거절했었는데, 주군께 연심을 품어도 괜찮은 것일까요?)
+		PRINTFORMW (그치만 이즈나는 선생님을 거절했었는데, 선생님께 연심을 품어도 괜찮은 것일까요?)
 		ELSE
 		PRINTFORMW (이 기분은 무엇일까요...?)
 		ENDIF
