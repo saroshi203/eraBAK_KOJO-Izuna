@@ -5804,12 +5804,15 @@ IF SELECTCOM == 300
 				CASE 4
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「주군! 이즈나가 도와드릴 일 이라던가 있으신가요?」
-					PRINTFORMW 「주군의 연인이자 닌자이기에! 무엇이던지 도와드리겠습니다!」
+					PRINTFORMW 「주군의 연인이자 닌자이기에! 뭐든 도와드리겠습니다!」
 					RESETCOLOR
-					CALL ASK_MULTI("무엇이던지라고 쉽게 말하는거 아니야")
+					CALL ASK_MULTI("야한것도 가능해?")
 					SETCOLOR 칼라_핑크
-					PRINTFORMW 「이즈나는 최대한 주군을 도와드리고 싶사옵니다만...」
-					PRINTFORMW 「음... 그럼 최대한 도와드리겠습니다!」
+					IF TALENT : 연인
+						PRINTFORMW 「하드한것만 아니라면 어느정도 가능하다구요..? ♥」
+					ELSE
+						PRINTFORMW 「그것이 주군의 명령이라면♥」
+					ENDIF 
 					RESETCOLOR
 				CASE 5;여기서부터 친애
 					CALL ASK_MULTI("이즈나가 좋아하는건 뭐야?")
@@ -5892,7 +5895,13 @@ IF SELECTCOM == 300
 					RESETCOLOR
 					CALL ASK_MULTI("그래... 이즈나가 그런다면....")
 				CASE 4
-					PRINTFORMW
+					SETCOLOR 칼라_핑크
+					PRINTFORMW 「주군, 이즈나는 주군의 기대에 부응하는 닌자인가요..?」
+					RESETCOLOR
+					CALL ASK_MULTI("이즈나는 언제나 기대에 부응하고 있어")
+					SETCOLOR 칼라_핑크
+					PRINTFORMW 「에헤헤~ 네! 감사합니다! 주군!」
+
 			ENDSELECT
 		
 		ELSE
@@ -5903,7 +5912,12 @@ IF SELECTCOM == 300
 					RESETCOLOR
 				CASE 1
 					SETCOLOR 칼라_핑크
-					PRINTFORMW 「흥~ 흥흥흥~ 흥♪ 이즈나이즈나 캥캥~ ♪」
+					SELECTCASE RAND:2
+						CASE 0
+							PRINTFORMW 「흥~ 흥흥흥~ 흥♪ 이즈나이즈나 캥캥~ ♪」
+						CASE 1
+							PRINTFORMW 「흐흥~하티하티호~♪」
+					ENDSELECT
 					RESETCOLOR
 					PRINTFORMW 이즈나는 기분이 좋아보인다
 				CASE 2
