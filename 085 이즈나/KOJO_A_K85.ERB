@@ -5758,7 +5758,7 @@ IF SELECTCOM == 300
 	ELSE
 		;연인/친애
 		IF TALENT:연인 || TALENT:친애
-			SELECTCASE RAND:(5+5*CFALG:TARGET:TALENT:친애) 
+			SELECTCASE RAND:(5+5*CFALG:TALENT:친애) 
 				CASE 0;연인 친애 겸용
 					SETCOLOR 칼라_핑크
 					PRINTFORMW 「주군과 함께 있으면 행복하네요...」
